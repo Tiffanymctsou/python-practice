@@ -18,3 +18,9 @@ for d in data: # d是每一個留言(字串); data是清單
 	if len(d) < 100:
 		new.append(d)
 print('一共有', len(new), '留言長度小於100個字')
+
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('一共有', len(good), '筆留言提到good')
